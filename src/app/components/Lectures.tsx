@@ -3,11 +3,16 @@ import React from "react";
 import styles from "./Lectures.module.css";
 import { lectureGroups } from "../data/lectureData";
 import { FaRocket, FaRegMoon } from "react-icons/fa"; // Updated icons
+import { IoPlanet } from "react-icons/io5";
 
 const Lectures = () => {
   return (
     <section id="lectures" className={styles.container}>
-      <h2 className={styles.heading}>Lectures</h2>
+      <div className={styles.headingContainer}>
+        <IoPlanet className={styles.groupIcon} />
+        <h2 className={styles.heading}>Lectures</h2>
+        <IoPlanet className={styles.groupIcon} />
+      </div>
       <div className={styles.groups}>
         {lectureGroups.map((group, groupIndex) => (
           <div key={groupIndex} className={styles.group}>

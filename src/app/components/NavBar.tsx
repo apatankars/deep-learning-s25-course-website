@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
       <div className={styles.logo}>
         {/* Replace with your logo image if available */}
         <FaRocket className={styles.logoIcon} />
-        <h1>Deep Learning</h1>
+        <h1>CSCI1470</h1>
       </div>
       <ul className={styles.navLinks}>
         <li>

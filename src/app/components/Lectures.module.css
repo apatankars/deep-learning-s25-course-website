@@ -27,7 +27,6 @@
 .heading {
   text-align: center;
   font-size: 3.5rem;
-  margin-bottom: 40px;
   font-family: "Orbitron", sans-serif;
   color: #ffcc00;
   text-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
@@ -126,12 +125,28 @@
   margin-right: 8px;
 }
 
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.groupIcon {
+  font-size: 3rem;
+  color: #ffcc00;
+}
+
 /* Mobile Responsive Styles */
 @media (max-width: 760px) {
   .heading {
     font-size: 2.2rem;
-    margin-bottom: 25px;
     padding: 0 10px;
+  }
+
+  .headingContainer {
+    margin-bottom: 20px;
   }
 
   .groups {
@@ -186,6 +201,10 @@
   .linkIcon {
     margin-right: 6px;
     font-size: 1.2rem;
+  }
+
+  .groupIcon {
+    font-size: 2.5rem;
   }
 
   /* Optional: Adjust container padding for smaller screens */
