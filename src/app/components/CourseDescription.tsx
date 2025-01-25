@@ -5,6 +5,7 @@ import { FaMapMarkerAlt, FaCalendarAlt, FaUser } from "react-icons/fa";
 import { SiCanvas, SiGooglescholar } from "react-icons/si";
 import { RiQuestionLine } from "react-icons/ri";
 import RecentItems from "./RecentItems";
+import { MdOutlineDocumentScanner } from "react-icons/md";
 
 const CourseDescription = () => {
   return (
@@ -44,26 +45,35 @@ const CourseDescription = () => {
                 <FaMapMarkerAlt className={styles.icon} />
                 <div>
                   <h3>Location</h3>
-                  <p>Room 101, Engineering Building</p>
+                  <p>Salomon Center 001</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <FaCalendarAlt className={styles.icon} />
                 <div>
                   <h3>Schedule</h3>
-                  <p>Tuesdays and Thursdays, 10:00 AM - 11:30 AM</p>
+                  <p>Monday, Wednesday, and Friday, 12:00 - 12:50 PM</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <FaUser className={styles.icon} />
                 <div>
                   <h3>Instructor</h3>
-                  <p>Dr. Jane Smith</p>
+                  <p>Prof. Eric Ewing</p>
                 </div>
               </div>
             </div>
 
             <div className={styles.links}>
+              <a
+                href="https://hackmd.io/@Eric-Ewing/BJVFUVaDke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                <MdOutlineDocumentScanner className={styles.linkIcon} />
+                Syllabus
+              </a>
               <a
                 href="https://edstem.org/"
                 target="_blank"
@@ -74,7 +84,7 @@ const CourseDescription = () => {
                 Edstem
               </a>
               <a
-                href="https://www.gradescope.com/"
+                href="https://www.gradescope.com/courses/934988"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
@@ -83,7 +93,7 @@ const CourseDescription = () => {
                 Gradescope
               </a>
               <a
-                href="https://canvas.instructure.com/"
+                href="https://canvas.brown.edu/courses/1097648"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
