@@ -3,12 +3,10 @@ import React from "react";
 import styles from "./Lectures.module.css";
 import { lectureGroups } from "../data/lectureData";
 import { FaRocket, FaRegMoon } from "react-icons/fa"; // Updated icons
-import Stars from "./Stars";
 
 const Lectures = () => {
   return (
     <section id="lectures" className={styles.container}>
-      {/* <Stars /> */}
       <h2 className={styles.heading}>Lectures</h2>
       <div className={styles.groups}>
         {lectureGroups.map((group, groupIndex) => (

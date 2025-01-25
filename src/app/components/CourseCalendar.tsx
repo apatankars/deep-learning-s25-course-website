@@ -1,7 +1,7 @@
 // components/CourseCalendar.tsx
 import React from "react";
 import styles from "./CourseCalendar.module.css";
-import { FaCalendarAlt, FaSpaceShuttle } from "react-icons/fa";
+import { FaSpaceShuttle } from "react-icons/fa";
 
 const CourseCalendar = () => {
   return (

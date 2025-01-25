@@ -10,10 +10,10 @@ export const assignments = [
       title: "Conceptual Part",
       link: "https://hackmd.io/@BDLS25/S1dv0oLDkx",
     },
-    // programming: {
-    //   title: "Programming Part",
-    //   link: "https://hackmd.io/@BDLS25/S1dv0oLDkx",
-    // },
+    programming: {
+      title: "Programming Part",
+      link: "https://hackmd.io/@BDLS25/S1dv0oLDkx",
+    },
   },
   // Add more assignments as needed
 ];

@@ -11,3 +11,19 @@ export interface LectureGroup {
   title?: string; // Optional group title (e.g., "Weeks 1-4")
   lectures: Lecture[];
 }
+
+export interface Assignment {
+  id: number;
+  name: string;
+  link: string;
+  inDate: string;
+  outDate: string;
+  conceptual?: {
+    title: string;
+    link: string;
+  };
+  programming?: {
+    title: string;
+    link: string;
+  };
+}

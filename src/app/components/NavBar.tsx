@@ -13,7 +13,6 @@ import {
   FaFolderOpen,
   FaUsers,
   FaRocket,
-  FaStar,
 } from "react-icons/fa";
 
 const NavBar: React.FC = () => {

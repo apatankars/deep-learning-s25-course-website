@@ -3,12 +3,10 @@ import React from "react";
 import styles from "./Assignments.module.css";
 import { assignments } from "../data/assignmentData";
 import { FaRocket, FaRegMoon, FaStar } from "react-icons/fa";
-import Stars from "./Stars";
 
 const Assignments = () => {
   return (
     <section id="assignments" className={styles.container}>
-      {/* <Stars /> */}
       <div className={styles.meteor}></div>
       <div className={styles.meteor2}></div>
       <h2 className={styles.heading}>

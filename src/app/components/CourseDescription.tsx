@@ -4,13 +4,11 @@ import styles from "./CourseDescription.module.css";
 import { FaMapMarkerAlt, FaCalendarAlt, FaUser } from "react-icons/fa";
 import { SiCanvas, SiGooglescholar } from "react-icons/si";
 import { RiQuestionLine } from "react-icons/ri";
-import Stars from "./Stars";
 import RecentItems from "./RecentItems";
 
 const CourseDescription = () => {
   return (
     <section id="course-description" className={styles.container}>
-      {/* <Stars /> */}
       <div className={styles.content}>
         <div className={styles.topContent}>
           <div className={styles.textContent}>

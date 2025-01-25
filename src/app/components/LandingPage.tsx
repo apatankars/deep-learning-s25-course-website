@@ -2,7 +2,6 @@
 
 import React, { useRef } from "react";
 import styles from "./LandingPage.module.css";
-import Stars from "./Stars";
 import TypewriterText from "./TypewriterText";
 
 const LandingPage = () => {
@@ -31,9 +30,6 @@ const LandingPage = () => {
 
   return (
     <div className={styles.container}>
-      {/* The star background */}
-      {/* <Stars /> */}
-
       {/* Content on top of the star background */}
       <TypewriterText
         text=" Welcome to Deep Learning"

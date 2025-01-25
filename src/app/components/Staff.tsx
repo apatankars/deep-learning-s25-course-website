@@ -3,6 +3,8 @@ import React from "react";
 import styles from "./Staff.module.css";
 import { FaUserAstronaut, FaStar, FaEnvelope } from "react-icons/fa";
 import staffData from "../data/staffData";
+import Image from "next/image";
+
 interface StaffMember {
   name: string;
   pronouns: string;
@@ -20,7 +22,13 @@ const StaffCard: React.FC<StaffMember> = ({
   <div className={styles.staffCard}>
     <div className={styles.imageContainer}>
       <div className={styles.stars}></div>
-      <img src={image} alt={name} className={styles.staffImage} />
+      <Image
+        src={image}
+        alt={name}
+        className={styles.staffImage}
+        width={500}
+        height={300}
+      />
       <div className={styles.constellation}></div>
     </div>
     <div className={styles.cardContent}>
@@ -66,8 +74,8 @@ const Staff = () => {
           </div>
         </div>
         <p className={styles.disclaimer}>
-          Do not email sensitive information, including Health Services & Dean's
-          Notes, to any HTAs, UTAs, or STAs.
+          Do not email sensitive information, including Health Services &
+          Dean&apos;s Notes, to any HTAs, UTAs, or STAs.
         </p>
       </div>
 

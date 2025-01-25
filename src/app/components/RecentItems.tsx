@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./RecentItems.module.css";
 import { lectureGroups } from "../data/lectureData";
-import { assignments } from "../data/assignmentData";
+import { Assignment } from "../types";
 import { FaRocket, FaRegMoon } from "react-icons/fa";
+import { assignments } from "../data/assignmentData";
 
 const getMostRecentLecture = () => {
   const allLectures = lectureGroups.flatMap((group) => group.lectures);
@@ -17,7 +18,8 @@ const getMostRecentLecture = () => {
 
 const getMostRecentAssignment = () => {
   return assignments.sort(
-    (a, b) => new Date(b.inDate).getTime() - new Date(a.inDate).getTime()
+    (a: Assignment, b: Assignment) =>
+      new Date(b.inDate).getTime() - new Date(a.inDate).getTime()
   )[0];
 };
 

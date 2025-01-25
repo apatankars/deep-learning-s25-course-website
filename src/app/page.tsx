@@ -9,7 +9,6 @@ import Lectures from "./components/Lectures";
 import Assignments from "./components/Assignments";
 import Stars from "./components/Stars";
 import CourseCalendar from "./components/CourseCalendar";
-import RecentItems from "./components/RecentItems";
 import Resources from "./components/Resources";
 import Staff from "./components/Staff";
 import NavBar from "./components/NavBar";
