@@ -37,7 +37,7 @@ const LandingPage = () => {
         className={styles.title}
       />
       <TypewriterText
-        text=" CSCI1470 - Spring 2025"
+        text=" BROWN UNIVERSITY'S CSCI1470"
         speed={150}
         className={styles.subTitle}
       />

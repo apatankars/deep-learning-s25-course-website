@@ -23,7 +23,7 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 3,
         title: "Perceptron and MNIST",
-        date: "2025-01-29",
+        date: "2025-01-27",
         // slidesLink: "slides/lecture3.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=27806295-bbba-4bc0-8add-b0fb012be3ed",
@@ -31,7 +31,7 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 4,
         title: "Perceptron (continued) and Loss Functions",
-        date: "2025-01-31",
+        date: "2025-01-29",
         // slidesLink: "slides/lecture4.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=498a5e27-d268-4f77-9d12-b0fb012be406",

@@ -18,6 +18,13 @@ import {
 const NavBar: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const goToSection = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     // Trigger the fade-in effect after component mounts
     const timer = setTimeout(() => {
@@ -40,39 +47,39 @@ const NavBar: React.FC = () => {
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <a href="#landing-page">
+          <button onClick={() => goToSection("landing-page")}>
             <FaHome className={styles.icon} /> Home
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#course-description">
+          <button onClick={() => goToSection("course-description")}>
             <FaBook className={styles.icon} /> Course
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#lectures">
+          <button onClick={() => goToSection("lectures")}>
             <FaVideo className={styles.icon} /> Lectures
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#assignments">
+          <button onClick={() => goToSection("assignments")}>
             <FaTasks className={styles.icon} /> Assignments
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#calendar">
+          <button onClick={() => goToSection("calendar")}>
             <FaCalendarAlt className={styles.icon} /> Calendar
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#resources">
+          <button onClick={() => goToSection("resources")}>
             <FaFolderOpen className={styles.icon} /> Resources
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#staff">
+          <button onClick={() => goToSection("staff")}>
             <FaUsers className={styles.icon} /> Staff
-          </a>
+          </button>
         </li>
       </ul>
       {/* Optional: Add decorative stars or cosmic elements */}

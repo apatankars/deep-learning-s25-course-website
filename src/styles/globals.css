@@ -35,3 +35,7 @@ body {
   background: var(--background);
   font-family: "Orbitron", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

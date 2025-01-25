@@ -21,6 +21,7 @@
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(243, 223, 145, 0.674);
   z-index: 1;
+  margin-bottom: 20px;
 }
 
 .spaceshipButton {

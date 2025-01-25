@@ -56,6 +56,7 @@
 }
 
 .linkButton {
+  margin-top: 10px;
   display: inline-flex;
   align-items: center;
   background-color: #2a0038; /* Deep purple background */
